@@ -31,11 +31,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getAdvice: () => {
-    console.log('dispatch');
-    console.log(AdviceActions.getAdvice());
-    dispatch(AdviceActions.getAdvice());
-  }
+  getAdvice: () => dispatch(AdviceActions.getAdvice())
 })
 
 
